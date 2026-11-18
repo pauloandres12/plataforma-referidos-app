@@ -23,9 +23,9 @@ function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/registro" element={<Registro />} />
       <Route element={<Layout />}>
         <Route path="/" element={<Inicio />} />
-        <Route path="/registro" element={<Registro />} />
         <Route path="/bienvenida" element={<Bienvenida />} />
       </Route>
     </Routes>
