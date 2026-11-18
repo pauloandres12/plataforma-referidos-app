@@ -1,9 +1,10 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, Outlet } from 'react-router-dom'
 import Inicio from './paginas/Inicio'
 import Registro from './paginas/Registro'
 import Login from './paginas/Login'
+import Bienvenida from './paginas/Bienvenida'
 
-function App() {
+function Layout() {
   return (
     <>
       <nav>
@@ -12,13 +13,22 @@ function App() {
         <Link to="/login">Iniciar sesión</Link>
       </nav>
       <main>
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/registro" element={<Registro />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
+        <Outlet />
       </main>
     </>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route element={<Layout />}>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/registro" element={<Registro />} />
+        <Route path="/bienvenida" element={<Bienvenida />} />
+      </Route>
+    </Routes>
   )
 }
 
