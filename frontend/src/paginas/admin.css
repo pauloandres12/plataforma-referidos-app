@@ -1,0 +1,298 @@
+.adm-pagina {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6fa;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: #191c1e;
+}
+
+.adm-pagina button {
+  font-family: inherit;
+  width: auto;
+  margin: 0;
+  filter: none;
+  cursor: pointer;
+}
+
+/* ---------- Menú lateral ---------- */
+.adm-lateral {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 20px 16px;
+  background: #1b4a78;
+  color: #fff;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.adm-marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.adm-logo {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #ffc600;
+}
+
+.adm-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.adm-marca-nombre {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.adm-marca-nombre span {
+  color: #ffc600;
+}
+
+.adm-marca-sub {
+  font-size: 9px;
+  font-weight: 700;
+  color: #9ec3ea;
+}
+
+.adm-item {
+  padding: 11px 14px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #c9dcf1;
+}
+
+.adm-item.activo {
+  background: #296bab;
+  color: #fff;
+}
+
+.adm-item small {
+  margin-left: 6px;
+  font-size: 10px;
+  color: #7fa6cf;
+}
+
+.adm-pie {
+  margin-top: auto;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.adm-pie small {
+  display: block;
+  font-weight: 400;
+  color: #9ec3ea;
+}
+
+.adm-pagina .adm-salir {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ---------- Contenido ---------- */
+.adm-contenido {
+  flex: 1;
+  padding: 32px;
+  min-width: 0;
+}
+
+.adm-migas {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.adm-contenido h1 {
+  margin: 6px 0 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1b4a78;
+}
+
+.adm-contenido > p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.adm-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.adm-kpi {
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.adm-kpi span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.adm-kpi b {
+  display: block;
+  margin-top: 8px;
+  font-size: 28px;
+  color: #1b4a78;
+}
+
+.adm-kpi b.naranja {
+  color: #e7a600;
+}
+
+.adm-kpi b.verde {
+  color: #16a34a;
+}
+
+.adm-kpi b.rojo {
+  color: #ba1a1a;
+}
+
+.adm-tarjeta {
+  margin-top: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.adm-pestanas {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  border-bottom: 1px solid #eef1f5;
+}
+
+.adm-pagina .adm-pestana {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.adm-pagina .adm-pestana.activa {
+  background: #296bab;
+  color: #fff;
+}
+
+.adm-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.adm-tabla th {
+  padding: 12px 16px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.adm-tabla td {
+  padding: 12px 16px;
+  border-top: 1px solid #eef1f5;
+  vertical-align: middle;
+}
+
+.adm-tabla td small {
+  display: block;
+  color: #64748b;
+}
+
+.adm-estado {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.adm-estado.pendiente {
+  background: #fff3c4;
+  color: #7a5a00;
+}
+
+.adm-estado.activa {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.adm-estado.inactiva {
+  background: #ffdad6;
+  color: #ba1a1a;
+}
+
+.adm-pagina .adm-activar {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #16a34a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.adm-pagina .adm-desactivar {
+  padding: 7px 14px;
+  border: 1px solid #ba1a1a;
+  border-radius: 8px;
+  background: #fff;
+  color: #ba1a1a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.adm-vacio {
+  padding: 32px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.adm-aviso {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.adm-aviso.error {
+  background: #ffdad6;
+  color: #ba1a1a;
+}

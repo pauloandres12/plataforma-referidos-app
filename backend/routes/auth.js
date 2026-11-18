@@ -175,10 +175,14 @@ router.post('/logout', (req, res) => {
   res.json({ mensaje: 'Sesión cerrada' });
 });
 
+// Datos del usuario con sesión, su código de referido y cuántas personas invitó
 router.get('/yo', verificarToken, async (req, res) => {
   try {
     const [filas] = await db.query(
-      'SELECT id, nombres, apellidos, correo, rol, estado FROM usuarios WHERE id = ?',
+      `SELECT u.id, u.nombres, u.apellidos, u.correo, u.rol, u.estado, u.codigo_referido,
+              (SELECT COUNT(*) FROM usuarios r WHERE r.referido_por = u.id) AS invitados,
+              (SELECT COUNT(*) FROM usuarios r WHERE r.referido_por = u.id AND r.estado = 'activa') AS invitados_activos
+       FROM usuarios u WHERE u.id = ?`,
       [req.usuario.id]
     );
     if (filas.length === 0) {

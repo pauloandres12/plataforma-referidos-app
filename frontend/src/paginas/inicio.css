@@ -1,0 +1,366 @@
+.ini-pagina {
+  min-height: 100vh;
+  background: #f4f6fa;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: #191c1e;
+}
+
+.ini-pagina button {
+  font-family: inherit;
+  width: auto;
+  margin: 0;
+  filter: none;
+}
+
+/* ---------- Encabezado ---------- */
+.ini-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 72px;
+  padding: 0 32px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ini-marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ini-logo {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #e3eef9;
+  flex-shrink: 0;
+}
+
+.ini-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+}
+
+.ini-marca-nombre {
+  font-size: 18px;
+  font-weight: 700;
+  color: #296bab;
+}
+
+.ini-marca-nombre span {
+  color: #ffc600;
+}
+
+.ini-marca-sub {
+  font-size: 9px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.ini-menu {
+  display: flex;
+  gap: 4px;
+  margin-left: 16px;
+}
+
+.ini-menu span {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  cursor: default;
+}
+
+.ini-menu span.activo {
+  background: #e3eef9;
+  color: #296bab;
+}
+
+.ini-derecha {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.ini-puntos-pill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #fff3c4;
+  color: #7a5a00;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ini-estado-pill {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.ini-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #296bab;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ini-usuario {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.ini-usuario small {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.ini-pagina .ini-salir {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ini-pagina .ini-salir:hover {
+  background: #f1f5f9;
+}
+
+/* ---------- Contenido ---------- */
+.ini-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.ini-saludo h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1b4a78;
+}
+
+.ini-saludo p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.ini-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.ini-kpi {
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.ini-kpi-titulo {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.ini-kpi-valor {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1b4a78;
+}
+
+.ini-kpi-valor.dorado {
+  color: #e7a600;
+}
+
+.ini-kpi-nota {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.ini-fila {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.ini-banner {
+  padding: 28px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #296bab, #1b4a78);
+  color: #fff;
+}
+
+.ini-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #ffc600;
+  color: #1b4a78;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.ini-banner h2 {
+  margin: 12px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ini-banner p {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #d2e4ff;
+}
+
+.ini-enlace {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ini-enlace code {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ini-pagina .ini-copiar {
+  padding: 0 18px;
+  border: none;
+  border-radius: 8px;
+  background: #ffc600;
+  color: #1b4a78;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ini-codigo {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #d2e4ff;
+}
+
+.ini-codigo b {
+  color: #fff;
+}
+
+.ini-caja {
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.ini-caja h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1b4a78;
+}
+
+.ini-noti {
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: #f4f6fa;
+  font-size: 13px;
+}
+
+.ini-noti small {
+  display: block;
+  margin-top: 2px;
+  color: #64748b;
+}
+
+.ini-accesos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.ini-acceso {
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.ini-acceso strong {
+  display: block;
+  font-size: 15px;
+  color: #1b4a78;
+}
+
+.ini-acceso small {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.ini-pronto {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .ini-menu,
+  .ini-usuario,
+  .ini-estado-pill {
+    display: none;
+  }
+
+  .ini-kpis,
+  .ini-accesos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ini-fila {
+    grid-template-columns: 1fr;
+  }
+}

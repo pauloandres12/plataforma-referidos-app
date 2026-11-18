@@ -41,8 +41,7 @@ function Login() {
       })
       const json = await res.json()
       if (res.ok) {
-        navigate('/bienvenida')
-      } else {
+        navigate(json.usuario.rol === 'administrador' ? '/admin' : '/inicio')      } else {
         setErrorGeneral(json.mensaje)
       }
     } catch {
